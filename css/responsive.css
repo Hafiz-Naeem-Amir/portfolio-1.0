@@ -1,0 +1,293 @@
+/* laptop responsive min 999px */
+@media screen and (max-width: 991px) {
+
+    /* services section  */
+    .container .services-box {
+        height: 100%;
+    }
+
+    .services-box i {
+        font-size: 2rem;
+        padding-top: .5rem;
+
+    }
+
+    .services-box h3 {
+        font-size: 1rem;
+    }
+
+    .services-box p {
+        font-size: .8rem;
+    }
+
+    /* portfolio section  */
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .portfolio-container .portfolio-box {
+        width: 260px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        display: grid;
+        background-color: var(--bkcolor);
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding-left: 2rem;
+        box-shadow: .5rem .5rem 1rem var(--bkcolor);
+        display: none;
+    }
+
+    .navbar.active{
+        display: grid;
+    }
+
+    .navbar a {
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* about section  */
+    .about{
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about .about-cotntent{
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+    }
+    /* services section  */
+    .service .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* portfolio section  */
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Mobile responsive max 425 px */
+@media screen and (max-width: 425px) {
+
+    /* navebar   Responsive */
+    /* .header {
+        display: flex;
+        justify-content: space-between;
+
+    } */
+
+    /* .navbar a {
+        display: none;
+        width: 100%;
+
+    } */
+
+
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+
+    .home .home-img img {
+        width: 50%;
+    }
+
+    .home .btn {
+        padding: .5rem;
+    }
+
+    .home h1 {
+        font-size: 1rem;
+    }
+
+
+    /* about section responsive  */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 1.3rem;
+    }
+
+    .about .img img {
+        width: 100%;
+
+    }
+
+    .about-cotntent {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .about h2 {
+        font-size: 1rem;
+
+    }
+
+    .about-cotntent p {
+        box-sizing: content-box;
+        padding: 1.5rem;
+        margin-top: .2rem;
+
+
+    }
+
+    .about p {
+        font-size: .7rem;
+        text-justify: auto;
+    }
+
+    .about .btn {
+        margin-bottom: 5px;
+    }
+
+    /* services section  */
+    .service {
+        padding: 4rem 1rem;
+    }
+
+    .service .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service .heading {
+        margin: 1rem;
+    }
+
+    .service .heading h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .container .service .services-box {
+        box-sizing: border-box;
+
+
+
+    }
+
+    .services-box .btn {
+        margin: 2rem;
+    }
+
+    /* portfolio section  */
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 1.7rem;
+
+    }
+
+    .portfolio-box {
+        width: 100%;
+        /* margin-left: 1rem; */
+    }
+    /* contatc section  */
+    .contact form .input-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+    .contact form .input-box input ,
+    .contact form textarea { 
+       width: 96%;
+       margin: 1rem 2.3rem;
+       padding: 1px 1px ;
+       margin: .3rem;
+    }
+    .contact form textarea{
+        height: 40vh;
+    }
+
+    /* footer section  */
+    .footer-text p {
+        font-size: .7rem;
+    }
+
+    .footer-icon i {
+        padding-top: 5px;
+
+        font-size: 1rem;
+
+    }
+
+    /* portfolio section  */
+    .portfolio .heading {
+        padding-top: .1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .portfolio-container .portfolio-box {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .portfolio-layer h4 {
+
+        margin-top: 3rem;
+
+    }
+
+    /* contact section  */
+    .contact h2 {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    .contact form .btn {
+        padding: .5rem;
+        margin-top: 3rem;
+        font-size: .6rem;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .contact {
+        width: 90%;
+        margin: 1%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* services section  */
+    .service .heading h2 {
+        font-size: 1.9rem;
+    }
+
+    .container .services-box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* portfolio section  */
+    .portfolio .portfolio-container {
+        gap: 2rem;
+    }
+}
