@@ -31,6 +31,7 @@ section {
 
 html {
     overflow-x: hidden;
+    font-size: 80.5%;
     /* font-size: .4rem !important; */
 }
 
@@ -89,6 +90,7 @@ html {
     display: flex;
     align-items: center;
     align-items: center;
+    width: 100%;
 }
 
 .home-contant h3 {
@@ -103,7 +105,8 @@ html {
 }
 
 .home-contant p {
-    font-size: .8rem;
+    font-size: 1.3rem;
+    text-align: justify;
 }
 
 .home-img img {
@@ -122,7 +125,7 @@ span {
     background: var(--min-color);
     border-radius: 3rem;
     box-shadow: 0 0 1rem var(--min-color);
-    font-size: .7rem;
+    font-size: 1.4rem;
     color: var(--second-bgcolor);
     letter-spacing: .1rem;
     font-weight: 380rem;
@@ -135,25 +138,25 @@ span {
 
 .social-media a {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: var(--min-color);
-    width: 1.8rem;
-    height: 1.8rem;
-    border: solid var(--min-color);
+    width: 3rem;
+    height: 3rem;
+    border: .3rem solid var(--min-color);
     border-radius: 50%;
     background: transparent;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 2rem 1rem 2rem 0;
-    transition: 1.5s ease;
+    transition: .5s ease;
 
 }
 
-.social-media a :hover {
+.social-media a:hover {
     background-color: var(--min-color);
     color: var(--second-bgcolor);
-    border-radius: 50%;
-    font-size: 1.3rem;
+    box-shadow: 0 0 1rem var(--min-color);
+
 }
 
 /* about section design  */
@@ -164,27 +167,36 @@ span {
     justify-content: center;
     box-sizing: border-box;
     padding: 5rem;
+    background-color: #323946;
 }
 
-about img {
+about img{
 
-    width: 100%
+    width: 100%;
+   background-color:#323946;
 }
 
 .about img img {
     width: 100%;
     height: 100%;
+    background-color:#323946;
 
 }
 
 .about-cotntent {
     width: 50%;
+    box-sizing: border-box;
+    padding: 5rem;
+    margin-bottom: 8rem;
+    box-sizing: border-box;
+    padding: 0 2rem 0 2rem;
+     text-align: justify;
 
 }
 
 .about .heading {
 
-    font-size: 1.9rem;
+    font-size: 3.2rem;
 }
 
 .about h3 {
@@ -193,7 +205,7 @@ about img {
 }
 
 .about p {
-    font-size: .9rem;
+    font-size:1.3rem;
     margin: 1rem 0 2rem;
 
 }
@@ -210,7 +222,7 @@ about img {
     margin: 2rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
 }
 
 .container {
@@ -261,18 +273,18 @@ about img {
 /* portfolio design  */
 
 
-.portfolio {
+.portfolio{
     width: 100%;
-    background-color: var(--bkcolor);
+    background-color:#323946;
     padding: 1rem 1rem;
     align-items: center;
-   margin-right: 1.3rem;
+    margin-right: 1.3rem;
 
 }
 
 .portfolio h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.9rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 
@@ -286,8 +298,6 @@ about img {
     align-items: center;
     text-align: center;
     gap: 2rem;
-   /* padding: 0rem 1rem; */
-    /* padding: 0 1rem; */
 }
 
 .portfolio-container .portfolio-box {
@@ -372,37 +382,59 @@ about img {
 }
 
 /* contact section  */
-form{
-
-    max-width: 70%;
-    margin: 1rem auto;
-    text-align: center;
-}
-.contact .btn{
-    text-align: center;
-    margin:  .8rem 0  ;
-}
- .contact h2{
-   color: var(--min-color);
-   font-size: 2rem;
-   text-align: center;
- }
- .contact form .input-box{
+.contact {
     display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
- }
- .contact form .input-box input ,
- .contact form textarea {
-    background-color: var(--background);
-    max-width: 96%;
-    margin: .5rem 2.3rem;
-    /* padding: .6rem 0.6rem; */
-    font-size: 1.6rem;
-    color: var(--second-bgcolor);
-    border-radius: .3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
 
- }
+.contact h2 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.9rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 70rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: var(--bkcolor);
+    border: .1rem solid var(--background);
+    resize: none;
+    border-radius: 1rem;
+}
+
+.contact form .input-box input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: var(--bkcolor);
+    border: .1rem solid var(--background);
+    border-radius: 1rem;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
 
 /* footer section design  */
 .footer-text {
