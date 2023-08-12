@@ -65,7 +65,7 @@ html {
 .navbar a {
     color: var(--text-color);
     padding-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     transition: 3s;
 
 }
@@ -266,7 +266,7 @@ about img{
 }
 
 .services-box p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     padding: 10px;
 }
 

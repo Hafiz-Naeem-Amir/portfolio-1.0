@@ -1,17 +1,12 @@
-@media screen and (max-width: 1024px){
-    html {
-        overflow-x: hidden;
-        font-size: 80.5%;
-    }
-}
 /* laptop responsive min 999px */
-@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 995px){
 
     /* services section  */
     .container .services-box {
         height: 100%;
     }
-
+    
     .services-box i {
         font-size: 2rem;
         padding-top: .5rem;
